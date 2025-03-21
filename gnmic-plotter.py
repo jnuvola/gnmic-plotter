@@ -41,7 +41,7 @@ def update_plot(metric_data):
         if not data:
             continue
         times, values = zip(*data)
-        ax.plot_date(times, values, "-", color="green", label=metric)
+        ax.plot(times, values, "-", color="green", label=metric)
 
     ax.set_xlabel("Time", color="white")
     ax.set_ylabel("Value", color="white")
